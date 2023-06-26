@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+      </style>
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5F2EEA',
+                    },
+                    fontFamily: {
+                        mulish:['Mulish']
+                    },
+                    spacing:{
+                        '75':'20.5rem',
+                        '100':'29.6rem',
+                        '1000':'80rem',
+                    },
+                    borderRadius:{
+                        'xlg':'1.5rem',
+                        'mlg':'1rem'
+                    },
+                    textUnderlineOffset: {
+                        26: '26px',
+                    }
+                }
+            },
+            variants: {
+                extends: {
+                    display: ['group-focus'],
+                    opacity: ['group-focus'],
+                    inset: ['group-focus'],
+                },
+            },
+            }
+        </script>
+    <title>View Page</title>
+</head>
+<body class="font-mulish">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+    <header class="bg-white">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-5 ">
+            <div class="md:flex md:gap-x-12 items-center justify-between">
+                <a href="#">
+                    <img class="h-9 md:h-14 md:w-auto" src="/assets/Tickitz 1.jpg" alt="logo">
+                </a>
+                <div class="hidden md:flex md:gap-x-12">
+                    <a class="font-medium text-gray-800 text-base" href="#">Home</a>
+                    <a class="font-medium text-gray-800 text-base" href="#">List Movie</a>
+                </div>     
+            </div>
+            <div class="hidden md:flex md:gap-x-12 items-center justify-between">
+                <img class="md:h-6 h-6 md:w-auto" src="./assets/bx_bx-search.jpg" alt="">
+                <img class="md:h-14 h-14 md:w-auto" src="./assets/Ellipse 11.jpg" alt="">
+            </div>
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="md:hidden" type="button"><img src="./assets/gg_menu-right-alt.svg" alt=""> </button>
+            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 shadow w-screen dark:bg-gray-700">
+                <ul class="md:hidden divide-y py-2 text-sm text-gray-700 dark:text-gray-200 flex flex-col items-center mx-auto" aria-labelledby="dropdownDefaultButton">
+                  <li>
+                    <a href="#" class="flex w-screen justify-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 font-bold dark:hover:text-white">Home</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex w-screen justify-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 font-bold dark:hover:text-white">List Movie</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex w-screen justify-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 font-bold dark:hover:text-white">Profile</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex w-screen justify-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 font-bold dark:hover:text-white">Logout</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex w-screen justify-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 font-medium text-sm dark:hover:text-white">&#169; 2020 Tickitz. All Rights Reserved</a>
+                  </li>
+                </ul>
+            </div>            
+        </nav>
+    </header>
+    <article class="bg-gray-100">
+        <section class="mx-auto max-w-7xl p-5 gap-6 md:grid flex flex-col md:items-baseline items-center grid-cols-2 grid-flow-row grid- grid-cols-[min-content_1fr] grid-rows-[min-content_1fr] auto">
+            <div class="h-100 w-75 rounded-xlg text-center bg-white row-start-1 row-end-6 ">
+                <div class="flex flex-col gap-y-3 h-96">
+                    <label class="text-base text-gray-600 flex justify-start p-5" for="info">INFO</label>
+                    <img class="mx-auto h-36 w-auto shadow-none" src="./assets/Ellipse 11.svg" alt="#">
+                    <p class="text-xl font-semibold">Jonathan El Rodriguez</p>
+                    <p class="text-sm text-gray-400">Moviegoers</p>
+                </div>
+                <hr class="w-100% bg-gray-50"></hr>
+                <div class="flex justify-center items-center my-4">
+                    <a class="bg-primary px-10 py-3 items-center text-center rounded-lg text-white border border-transparent font-semibold" href="#">Logout</a>
+                </div>  
+            </div>
+            <div class="hidden w-100% h-auto md:flex gap-x-12 rounded-mlg my-10 p-5 items-center bg-white">
+                <a class="font-semibold text-gray-400" href="#">Account Settings</a>
+                <a class="font-semibold underline underline-offset-26 decoration-2 decoration-primary" href="#">Order History</a>
+            </div>
+            <div>
+                <div class="w-100% h-auto flex flex-col gap-y-6 rounded-mlg p-9 bg-white">
+                    <div class="flex lg:flex-row flex-col-reverse gap-y-4 justify-between pt-1 md:pt-4 lg:items-center">
+                        <div class="flex flex-col gap-y-4">
+                            <h2 class="text-xs text-gray-600">Tuesday, 07 July 2020 - 04:30pm</h2>
+                            <h1 class="text-lg font-semibold leading-9 tracking-widest">Spider-Man: Homecoming</h1>
+                        </div>
+                        <img class="w-32 h-auto overflow-hidden" src="./assets/CineOne21 2.jpg" alt="#">
+                    </div>
+                    <hr class="w-100% bg-gray-50"></hr>
+                    <div class="flex justify-between px-5 pt-1 md:pt-4 items-center">
+                        <a href="#" class="bg-green-600 px-10 py-3 mx-auto lg:mx-0 lg:w-auto w-full items-center text-center rounded-lg text-white border border-transparent font-semibold">Ticket Active</a>
+                        <a class="hidden lg:flex text-xl text-gray-400" href="#">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="w-100% h-auto flex flex-col gap-y-6 rounded-mlg p-9 bg-white">
+                    <div class="flex lg:flex-row flex-col-reverse gap-y-4 justify-between pt-1 md:pt-4 lg:items-center">
+                        <div class="flex flex-col gap-y-4">
+                            <h2 class="text-xs text-gray-600">Tuesday, 14 July 2020 - 08:00pm</h2>
+                            <h1 class="text-lg font-semibold leading-9 tracking-widest">Black Widow</h1>
+                        </div>
+                        <img class="w-32 h-auto overflow-hidden" src="./assets/ebv.id 2.jpg" alt="#">
+                    </div>
+                    <hr class="w-100% bg-gray-50"></hr>
+                    <div class="flex justify-between px-5 pt-1 md:pt-4 items-center">
+                        <a href="#" class="bg-gray-400 px-10 py-3 mx-auto lg:mx-0 lg:w-auto w-full items-center text-center rounded-lg text-white border border-transparent font-semibold">Ticket Used</a>
+                        <a class="hidden lg:flex text-xl text-gray-400" href="#">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="w-100% h-auto flex flex-col gap-y-6 rounded-mlg p-9 bg-white">
+                    <div class="flex lg:flex-row flex-col-reverse gap-y-4 justify-between pt-1 md:pt-4 lg:items-center">
+                        <div class="flex flex-col gap-y-4">
+                            <h2 class="text-xs text-gray-600">Saturday, 17 July 2020 - 06:30pm</h2>
+                            <h1 class="text-lg font-semibold leading-9 tracking-widest">Avenger : Endgame</h1>
+                        </div>
+                        <img class="w-32 h-auto overflow-hidden" src="./assets/CineOne21 2.jpg" alt="#">
+                    </div>
+                    <hr class="w-100% bg-gray-50"></hr>
+                    <div class="flex justify-between px-5 pt-1 md:pt-4 items-center">
+                        <a href="#" class="bg-gray-400 px-10 py-3 mx-auto lg:mx-0 lg:w-auto w-full items-center text-center rounded-lg text-white border border-transparent font-semibold">Ticket Used</a>
+                        <a class="hidden lg:flex text-xl text-gray-400" href="#">See Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <footer class="mx-auto flex flex-col md:flex-row max-w-7xl justify-between px-10 py-20 gap-y-16 md:gap-x-2">
+        <div>
+            <img class="h-20 w-auto" src="/assets/Tickitz 1.jpg" alt="logo">
+            <p class="font-medium text-gray-700 leading-8 tracking-wider">Stop waiting in line. Buy tickets <br>conveniently, watch movies quietly.</p>
+        </div>
+        <div class="flex flex-col gap-y-6">
+            <h1 class="text-base font-bold leading-5">Explore</h1>
+            <div class="flex flex-row md:flex-col gap-x-12 gap-y-2">
+                <h2 class="text-gray-800">Home</h2>
+                <h2 class="text-gray-800">List Movie</h2>
+            </div>
+        </div>
+        <div class="flex flex-col gap-y-5">
+            <h1 class="text-base font-bold leading-5">Our Sponsor</h1>
+            <div class="flex flex-row md:flex-col gap-x-12 gap-y-4">
+                <img class="w-32 h-auto overflow-hidden" src="./assets/ebv.id 2.jpg" alt="#">
+                <img class="w-44 h-auto overflow-hidden" src="./assets/CineOne21 2.jpg" alt="#">
+                <img class="w-32 h-auto overflow-hidden" src="./assets/hiflix 2.jpg" alt="#">
+            </div>
+        </div>
+        <div class="flex flex-col gap-y-7">
+            <h1 class="text-base font-bold leading-5">Follow Us</h1>
+            <div class="flex gap-x-6">
+                <div class="flex flex-row md:flex-col gap-x-12 gap-y-4">
+                    <img class="w-8 md:w-6 h-auto" src="./assets/eva_facebook-outline.jpg" alt="">
+                    <img class="w-8 md:w-6 h-auto" src="./assets/bx_bxl-instagram.jpg" alt="">
+                    <img class="w-8 md:w-6 h-auto" src="./assets/eva_twitter-outline.jpg" alt="">
+                    <img class="w-8 md:w-6 h-auto" src="./assets/feather_youtube.jpg" alt="">
+                </div>
+                <div class="hidden md:flex flex-col gap-y-4">
+                    <p>Tickitz Cinema id</p>
+                    <p>tickitz.id</p>
+                    <p>tickitz.id</p>
+                    <p>Tickitz Cinema id</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <p class="md:text-center font-sm text-gray-800 leading-8 tracking-wider px-5 py-10">&#169; 2020 Tickitz. All Rights Reserved</p>
+</body>
+</html>
+
+
+
+

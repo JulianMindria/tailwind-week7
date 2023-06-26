@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+      </style>
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5F2EEA',
+                    },
+                    fontFamily: {
+                        mulish:['Mulish']
+                    },
+                    spacing:{
+                        '75':'20.5rem',
+                        '100':'29.6rem',
+                        '1000':'80rem',
+                    },
+                    borderRadius:{
+                        'xlg':'1.5rem',
+                        'mlg':'1rem'
+                    },
+                    textUnderlineOffset: {
+                        26: '26px',
+                    }
+                }
+            },
+            variants: {
+                extends: {
+                    display: ['group-focus'],
+                    opacity: ['group-focus'],
+                    inset: ['group-focus'],
+                },
+            },
+            }
+        </script>
+    <title>View Page</title>
+</head>
+<body class="font-mulish">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+    <header class="bg-white">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-5 ">
+            <div class="md:flex md:gap-x-12 items-center justify-between">
+                <a href="#">
+                    <img class="h-9 md:h-14 md:w-auto" src="/assets/Tickitz 1.jpg" alt="logo">
+                </a>
+                <div class="hidden md:flex md:gap-x-12">
+                    <a class="font-medium text-gray-800 text-base" href="#">Home</a>
+                    <a class="font-medium text-gray-800 text-base" href="#">List Movie</a>
+                </div>      
+            </div>
+            <div class="hidden md:flex md:gap-x-12 items-center justify-between">
+                <img class="md:h-6 h-6 md:w-auto" src="./assets/bx_bx-search.jpg" alt="">
+                <img class="md:h-14 h-14 md:w-auto" src="./assets/Ellipse 11.jpg" alt="">
+            </div>
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="md:hidden" type="button"><img src="./assets/gg_menu-right-alt.svg" alt=""> </button>
+            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 shadow w-screen dark:bg-gray-700">
+                <ul class="md:hidden divide-y py-2 text-sm text-gray-700 dark:text-gray-200 flex flex-col items-center mx-auto" aria-labelledby="dropdownDefaultButton">
+                  <li>
+                    <a href="#" class="flex w-screen justify-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 font-bold dark:hover:text-white">Home</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex w-screen justify-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 font-bold dark:hover:text-white">List Movie</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex w-screen justify-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 font-bold dark:hover:text-white">Profile</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex w-screen justify-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 font-bold dark:hover:text-white">Logout</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex w-screen justify-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 font-medium text-sm dark:hover:text-white">&#169; 2020 Tickitz. All Rights Reserved</a>
+                  </li>
+                </ul>
+            </div>            
+        </nav>
+    </header>
+    <article class="bg-gray-100">
+        <section class="mx-auto max-w-7xl p-5 gap-8 flex md:flex-col flex-col-reverse lg:grid grid-cols-2 grid-flow-row grid- grid-cols-[min-content_1fr] grid-rows-[min-content_1fr]">
+            <div class="hidden md:flex flex-col">
+                <h1 class="p-5 text-2xl font-bold">Payment Info</h1>
+                <div class="bg-white p-8 rounded-mlg flex flex-col gap-y-6 justify-between w-auto h-auto divide-y">
+                    <div class="flex justify-between pt-3">
+                        <h2>Date & Time</h2>
+                        <h2>Tuesday, 07 July 2020 at 02:00 </h2>
+                    </div>
+                    <div class="flex justify-between pt-5">
+                        <h2>Movie Title</h2>
+                        <h2>Spider-Man: Homecoming</h2>
+                    </div>
+                    <div class="flex justify-between pt-5">
+                        <h2>Cinema name</h2>
+                        <h2>CineOne21 Cinema</h2>
+                    </div>
+                    <div class="flex justify-between pt-5">
+                        <h2>Number of tickets</h2>
+                        <h2>3 pieces</h2>
+                    </div>
+                    <div class="flex justify-between pt-5">
+                        <h2>Total payment</h2>
+                        <h2>$30,00</h2>
+                    </div>
+                </div>
+            </div>
+            <a class="mx-auto md:hidden bg-primary w-full py-4 text-white rounded-mlg flex justify-center gap-y-6" href="#">Pay your order</a>
+            <div class="col-start-2 row-start-1 row-end-3 w-full xl:w-full lg:w-72 h-auto mx-auto">
+                <h1 class="p-5 text-2xl font-bold">Personal Info</h1>
+                <div class="bg-white flex flex-col items-center rounded-mlg gap-y-8 py-8">
+                    <div class="relative flex flex-col gap-y-2">
+                        <label for="firstname">Full Name</label>
+                        <input class="border border-gray-300 pl-5 w-96 xl:w-96 lg:w-64 h-14 rounded-mlg" type="text" name="firstname" id="fname" placeholder="Jonas El Rodriguez">
+                    </div>
+                    <div class="relative flex flex-col gap-y-2">
+                        <label for="email">Email</label>
+                        <input class="border border-gray-300 pl-5 w-96 xl:w-96 lg:w-64 h-14 rounded-mlg" type="text" name="email" id="email" placeholder="jonasrodrigu123@gmail.com">
+                    </div>
+                    <div class="relative flex flex-col gap-y-2">
+                        <label for="phone">Phone Number</label>
+                        <input class="border border-gray-300 pl-5 w-96 xl:w-96 lg:w-64 h-14 rounded-mlg" type="tel" name="phone" id="phone" placeholder="+62  |  81445687121">
+                    </div>
+                    <div class="flex gap-x-2 w-96 xl:w-96 lg:w-64 h-auto bg-orange-100 px-5 py-5 mt-8 rounded-mlg">
+                        <img class="w-7 h-7" src="./assets/clarity_warning-standard-solid.png" alt="">
+                        <h2>Fill your data correctly.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="w-auto h-auto">
+                <div>
+                    <h1 class="p-5 text-2xl font-bold">Choose a Payment Method</h1>
+                <div class="bg-white rounded-mlg p-5">
+                    <div class="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-8 px-10 py-5 content-center">
+                        <div class="flex justify-center items-center w-36 h-14 mx-auto bg-white rounded-lg border border-gray-300">
+                            <img class="h-8 w-auto" src="./assets/Bank BCA Logo (SVG-240p) - FileVector69 1.jpg" alt="#">
+                        </div>
+                        <div class="flex justify-center items-center w-36 h-14 mx-auto bg-white rounded-lg border border-gray-300">
+                            <img class="h-8 w-auto" src="./assets/Bank BCA Logo (SVG-240p) - FileVector69 1.jpg" alt="#">
+                        </div>
+                        <div class="flex justify-center items-center w-36 h-14 mx-auto bg-white rounded-lg border border-gray-300">
+                            <img class="h-8 w-auto" src="./assets/Bank BCA Logo (SVG-240p) - FileVector69 1.jpg" alt="#">
+                        </div>
+                        <div class="flex justify-center items-center w-36 h-14 mx-auto bg-white rounded-lg border border-gray-300">
+                            <img class="h-8 w-auto" src="./assets/Bank BCA Logo (SVG-240p) - FileVector69 1.jpg" alt="#">
+                        </div>
+                        <div class="hidden md:flex justify-center items-center w-36 h-14 mx-auto bg-white rounded-lg border border-gray-300">
+                            <img class="h-8 w-auto" src="./assets/Bank BCA Logo (SVG-240p) - FileVector69 1.jpg" alt="#">
+                        </div>
+                        <div class="hidden md:flex justify-center items-center w-36 h-14 mx-auto bg-white rounded-lg border border-gray-300">
+                            <img class="h-8 w-auto" src="./assets/Bank BCA Logo (SVG-240p) - FileVector69 1.jpg" alt="#">
+                        </div>
+                        <div class="hidden sm:flex justify-center items-center w-36 h-14 mx-auto bg-white rounded-lg border border-gray-300">
+                            <img class="h-8 w-auto" src="./assets/Bank BCA Logo (SVG-240p) - FileVector69 1.jpg" alt="#">
+                        </div>
+                        <div class="hidden sm:flex justify-center items-center w-36 h-14 mx-auto bg-white rounded-lg border border-gray-300">
+                            <img class="h-8 w-auto" src="./assets/Bank BCA Logo (SVG-240p) - FileVector69 1.jpg" alt="#">
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6 justify-center">
+                        <div class="w-72 h-0.5 bg-gray-200"></div>
+                        <p>or</p>
+                        <div class="w-72 h-0.5 bg-gray-200"></div>
+                    </div>
+                    <div class="my-5">
+                        <p class="text-center">Pay via cash. <a class="text-primary" href="#">See how it work</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:flex gap-x-12 mt-10 mb-10 justify-between">
+                <a class="bg-white hover:bg-primary border border-primary w-80 py-4 text-primary hover:text-white rounded-mlg flex justify-center gap-y-6" href="#">Previous step</a>
+                <a class="bg-primary w-80 py-4 text-white rounded-mlg flex justify-center gap-y-6" href="#">Pay your order</a>
+                </div>
+            </div>
+        </section>
+    </article>
+    <footer class="mx-auto flex flex-col md:flex-row max-w-7xl justify-between px-10 py-20 gap-y-16 md:gap-x-2">
+        <div>
+            <img class="h-20 w-auto" src="/assets/Tickitz 1.jpg" alt="logo">
+            <p class="font-medium text-gray-700 leading-8 tracking-wider">Stop waiting in line. Buy tickets <br>conveniently, watch movies quietly.</p>
+        </div>
+        <div class="flex flex-col gap-y-6">
+            <h1 class="text-base font-bold leading-5">Explore</h1>
+            <div class="flex flex-row md:flex-col gap-x-12 gap-y-2">
+                <h2 class="text-gray-800">Home</h2>
+                <h2 class="text-gray-800">List Movie</h2>
+            </div>
+        </div>
+        <div class="flex flex-col gap-y-5">
+            <h1 class="text-base font-bold leading-5">Our Sponsor</h1>
+            <div class="flex flex-row md:flex-col gap-x-12 gap-y-4">
+                <img class="w-32 h-auto overflow-hidden" src="./assets/ebv.id 2.jpg" alt="#">
+                <img class="w-44 h-auto overflow-hidden" src="./assets/CineOne21 2.jpg" alt="#">
+                <img class="w-32 h-auto overflow-hidden" src="./assets/hiflix 2.jpg" alt="#">
+            </div>
+        </div>
+        <div class="flex flex-col gap-y-7">
+            <h1 class="text-base font-bold leading-5">Follow Us</h1>
+            <div class="flex gap-x-6">
+                <div class="flex flex-row md:flex-col gap-x-12 gap-y-4">
+                    <img class="w-8 md:w-6 h-auto" src="./assets/eva_facebook-outline.jpg" alt="">
+                    <img class="w-8 md:w-6 h-auto" src="./assets/bx_bxl-instagram.jpg" alt="">
+                    <img class="w-8 md:w-6 h-auto" src="./assets/eva_twitter-outline.jpg" alt="">
+                    <img class="w-8 md:w-6 h-auto" src="./assets/feather_youtube.jpg" alt="">
+                </div>
+                <div class="hidden md:flex flex-col gap-y-4">
+                    <p>Tickitz Cinema id</p>
+                    <p>tickitz.id</p>
+                    <p>tickitz.id</p>
+                    <p>Tickitz Cinema id</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <p class="md:text-center font-sm text-gray-800 leading-8 tracking-wider px-5 py-10">&#169; 2020 Tickitz. All Rights Reserved</p>
+</body>
+</html>
