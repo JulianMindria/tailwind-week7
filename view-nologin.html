@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+      </style>
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5F2EEA',
+                    },
+                    fontFamily: {
+                        mulish:['Mulish']
+                    },
+                    spacing:{
+                        '75':'20.5rem',
+                        '100':'29.6rem',
+                        '1000':'80rem',
+                    },
+                    borderRadius:{
+                        'xlg':'1.5rem',
+                        'mlg':'1rem'
+                    },
+                    textUnderlineOffset: {
+                        26: '26px',
+                    }
+                }
+            },
+            variants: {
+                extends: {
+                    display: ['group-focus'],
+                    opacity: ['group-focus'],
+                    inset: ['group-focus'],
+                },
+            },
+            }
+        </script>
+    <title>View Page</title>
+</head>
+<body class="font-mulish">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+    <header class="bg-white">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-5 ">
+            <div class="md:flex md:gap-x-12 items-center justify-between">
+                <a href="#">
+                    <img class="h-9 md:h-14 md:w-auto" src="/assets/Tickitz 1.jpg" alt="logo">
+                </a>  
+            </div>
+            <div class="hidden md:flex md:gap-x-12 items-center justify-between">
+                <a class="h-10 w-32 bg-primary mx-auto items-center flex justify-center text-white rounded-lg" href="signup.html">Sign Up</a>
+            </div>
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="md:hidden" type="button"><img src="./assets/gg_menu-right-alt.svg" alt=""> </button>
+            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 shadow w-screen dark:bg-gray-700">
+                <ul class="md:hidden divide-y py-2 text-sm text-gray-700 dark:text-gray-200 flex flex-col items-center mx-auto" aria-labelledby="dropdownDefaultButton">
+                  <li>
+                    <a href="#" class="flex w-screen justify-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 font-bold dark:hover:text-white">Home</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex w-screen justify-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 font-bold dark:hover:text-white">List Movie</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex w-screen justify-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 font-bold dark:hover:text-white">Sign Up</a>
+                  </li>
+            </div>            
+        </nav>
+    </header>
+    <section class="bg-gray-50">
+        <div class="mx-auto flex md:flex-row flex-col max-w-7xl md:items-center justify-between gap-y-6 pt-10 pb-2 px-5 md:p-9">
+            <p class="font-bold text-2xl">List Movie</p>
+            <div class="flex md:justify-end gap-x-6">
+                <a class="h-12 w-32 bg-gray-50 border flex justify-between px-5 items-center border-gray-300 bg-white rounded-mlg text-gray-400" href="#">Sort <img class="h-2 w-auto" src="./assets/Forward.png" alt=""></a>
+                <input class="h-12 w-80 bg-gray-50 border border-gray-300 bg-white rounded-mlg px-5" type="text" id="search" name="search" placeholder="Search Movie Name ...">
+            </div>
+        </div>
+        <div class="relative gap-x-5 flex max-w-7xl mx-auto overflow-scroll px-5 py-5">
+            <a href="#" class="w-10 h-5 px-16 py-5 flex text-primary hover:bg-primary font-medium hover:text-white justify-center items-center text-center py-2 border border-primary rounded-md">September</a>
+            <a href="#" class="w-10 h-5 px-16 py-5 flex text-primary hover:bg-primary font-medium hover:text-white justify-center items-center text-center py-2 border border-primary rounded-md">October</a>
+            <a href="#" class="w-10 h-5 px-16 py-5 flex text-primary hover:bg-primary font-medium hover:text-white justify-center items-center text-center py-2 border border-primary rounded-md">November</a>
+            <a href="#" class="w-10 h-5 px-16 py-5 flex text-primary hover:bg-primary font-medium hover:text-white justify-center items-center text-center py-2 border border-primary rounded-md">Desember</a>
+            <a href="#" class="w-10 h-5 px-16 py-5 flex text-primary hover:bg-primary font-medium hover:text-white justify-center items-center text-center py-2 border border-primary rounded-md">january</a>
+            <a href="#" class="w-10 h-5 px-16 py-5 flex text-primary hover:bg-primary font-medium hover:text-white justify-center items-center text-center py-2 border border-primary rounded-md">February</a>
+            <a href="#" class="w-10 h-5 px-16 py-5 flex text-primary hover:bg-primary font-medium hover:text-white justify-center items-center text-center py-2 border border-primary rounded-md">March</a>
+            <a href="#" class="w-10 h-5 px-16 py-5 flex text-primary hover:bg-primary font-medium hover:text-white justify-center items-center text-center py-2 border border-primary rounded-md">April</a>
+            <a href="#" class="w-10 h-5 px-16 py-5 flex text-primary hover:bg-primary font-medium hover:text-white justify-center items-center text-center py-2 border border-primary rounded-md">May</a>
+        </div>
+        <div class="mx-auto max-w-7xl text-center items-center grid  lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 grid-flow-row grid- bg-white py-8 px-10 rounded-xlg">
+            <div class="w-56 h-auto bg-white border border-gray-300 items-center mx-auto py-6 rounded-lg flex flex-col">
+                <img class="mx-auto w-40 h-64" src="./assets/janda hitam.jpg" alt="black widow">
+                <div class="p-5">
+                    <p class="font-bold text-base tracking-wide leading-5">Black Widow</p>
+                    <p class="text-gray-400 tracking-wider font-medium text-sm leading-8">Action, Adventure, Sci-fi</p>
+                </div>
+                <a class="w-40 h-8 mx-auto rounded-md items-center text-primary hover:bg-primary hover:text-white flex justify-center bg-white border border-primary" href="#">Detail</a>
+            </div>
+            <div class="w-56 h-auto bg-white border border-gray-300 items-center mx-auto py-6 rounded-lg flex flex-col">
+                <img class="mx-auto w-40 h-64" src="./assets/janda hitam.jpg" alt="black widow">
+                <div class="p-5">
+                    <p class="font-bold text-base tracking-wide leading-5">Black Widow</p>
+                    <p class="text-gray-400 tracking-wider font-medium text-sm leading-8">Action, Adventure, Sci-fi</p>
+                </div>
+                <a class="w-40 h-8 mx-auto rounded-md items-center text-primary hover:bg-primary hover:text-white flex justify-center bg-white border border-primary" href="#">Detail</a>
+            </div>
+            <div class="w-56 h-auto bg-white border border-gray-300 items-center mx-auto py-6 rounded-lg flex flex-col">
+                <img class="mx-auto w-40 h-64" src="./assets/janda hitam.jpg" alt="black widow">
+                <div class="p-5">
+                    <p class="font-bold text-base tracking-wide leading-5">Black Widow</p>
+                    <p class="text-gray-400 tracking-wider font-medium text-sm leading-8">Action, Adventure, Sci-fi</p>
+                </div>
+                <a class="w-40 h-8 mx-auto rounded-md items-center text-primary hover:bg-primary hover:text-white flex justify-center bg-white border border-primary" href="#">Detail</a>
+            </div>
+            <div class="w-56 h-auto bg-white border border-gray-300 items-center mx-auto py-6 rounded-lg flex flex-col">
+                <img class="mx-auto w-40 h-64" src="./assets/janda hitam.jpg" alt="black widow">
+                <div class="p-5">
+                    <p class="font-bold text-base tracking-wide leading-5">Black Widow</p>
+                    <p class="text-gray-400 tracking-wider font-medium text-sm leading-8">Action, Adventure, Sci-fi</p>
+                </div>
+                <a class="w-40 h-8 mx-auto rounded-md items-center text-primary hover:bg-primary hover:text-white flex justify-center bg-white border border-primary" href="#">Detail</a>
+            </div>
+            <div class="w-56 h-auto bg-white border border-gray-300 items-center mx-auto py-6 rounded-lg md:flex hidden flex-col">
+                <img class="mx-auto w-40 h-64" src="./assets/janda hitam.jpg" alt="black widow">
+                <div class="p-5">
+                    <p class="font-bold text-base tracking-wide leading-5">Black Widow</p>
+                    <p class="text-gray-400 tracking-wider font-medium text-sm leading-8">Action, Adventure, Sci-fi</p>
+                </div>
+                <a class="w-40 h-8 mx-auto rounded-md items-center text-primary hover:bg-primary hover:text-white flex justify-center bg-white border border-primary" href="#">Detail</a>
+            </div>
+            <div class="w-56 h-auto bg-white border border-gray-300 items-center mx-auto py-6 rounded-lg md:flex hidden flex-col">
+                <img class="mx-auto w-40 h-64" src="./assets/janda hitam.jpg" alt="black widow">
+                <div class="p-5">
+                    <p class="font-bold text-base tracking-wide leading-5">Black Widow</p>
+                    <p class="text-gray-400 tracking-wider font-medium text-sm leading-8">Action, Adventure, Sci-fi</p>
+                </div>
+                <a class="w-40 h-8 mx-auto rounded-md items-center text-primary hover:bg-primary hover:text-white flex justify-center bg-white border border-primary" href="#">Detail</a>
+            </div>
+            <div class="w-56 h-auto bg-white border border-gray-300 items-center mx-auto py-6 rounded-lg lg:flex md:hidden hidden flex-col">
+                <img class="mx-auto w-40 h-64" src="./assets/janda hitam.jpg" alt="black widow">
+                <div class="p-5">
+                    <p class="font-bold text-base tracking-wide leading-5">Black Widow</p>
+                    <p class="text-gray-400 tracking-wider font-medium text-sm leading-8">Action, Adventure, Sci-fi</p>
+                </div>
+                <a class="w-40 h-8 mx-auto rounded-md items-center text-primary hover:bg-primary hover:text-white flex justify-center bg-white border border-primary" href="#">Detail</a>
+            </div>
+            <div class="w-56 h-auto bg-white border border-gray-300 items-center mx-auto py-6 rounded-lg lg:flex md:hidden hidden flex-col">
+                <img class="mx-auto w-40 h-64" src="./assets/janda hitam.jpg" alt="black widow">
+                <div class="p-5">
+                    <p class="font-bold text-base tracking-wide leading-5">Black Widow</p>
+                    <p class="text-gray-400 tracking-wider font-medium text-sm leading-8">Action, Adventure, Sci-fi</p>
+                </div>
+                <a class="w-40 h-8 mx-auto rounded-md items-center text-primary hover:bg-primary hover:text-white flex justify-center bg-white border border-primary" href="#">Detail</a>
+            </div>
+        </div>
+        <div class="mx-auto flex max-w-7xl items-center justify-center p-5 gap-x-2 py-10">
+            <a class="bg-white text-primary hover:bg-primary hover:text-white text-gray-600 w-10 h-10 items-center text-center flex justify-center rounded-lg border border-gray-300 font-semibold" href="#">1</a>
+            <a class="bg-white text-primary hover:bg-primary hover:text-white text-gray-600 w-10 h-10 items-center text-center flex justify-center rounded-lg border border-gray-300 font-semibold" href="#">2</a>
+            <a class="bg-white text-primary hover:bg-primary hover:text-white text-gray-600 w-10 h-10 items-center text-center flex justify-center rounded-lg border border-gray-300 font-semibold" href="#">3</a>
+            <a class="bg-white text-primary hover:bg-primary hover:text-white text-gray-600 w-10 h-10 items-center text-center flex justify-center rounded-lg border border-gray-300 font-semibold" href="#">4</a>
+        </div>
+    </section>
+    <footer class="mx-auto flex flex-col md:flex-row max-w-7xl justify-between px-10 py-20 gap-y-16 md:gap-x-2">
+        <div>
+            <img class="h-20 w-auto" src="/assets/Tickitz 1.jpg" alt="logo">
+            <p class="font-medium text-gray-700 leading-8 tracking-wider">Stop waiting in line. Buy tickets <br>conveniently, watch movies quietly.</p>
+        </div>
+        <div class="flex flex-col gap-y-6">
+            <h1 class="text-base font-bold leading-5">Explore</h1>
+            <div class="flex flex-row md:flex-col gap-x-12 gap-y-2">
+                <h2 class="text-gray-800">Home</h2>
+                <h2 class="text-gray-800">List Movie</h2>
+            </div>
+        </div>
+        <div class="flex flex-col gap-y-5">
+            <h1 class="text-base font-bold leading-5">Our Sponsor</h1>
+            <div class="flex flex-row md:flex-col gap-x-12 gap-y-4">
+                <img class="w-32 h-auto overflow-hidden" src="./assets/ebv.id 2.jpg" alt="#">
+                <img class="w-44 h-auto overflow-hidden" src="./assets/CineOne21 2.jpg" alt="#">
+                <img class="w-32 h-auto overflow-hidden" src="./assets/hiflix 2.jpg" alt="#">
+            </div>
+        </div>
+        <div class="flex flex-col gap-y-7">
+            <h1 class="text-base font-bold leading-5">Follow Us</h1>
+            <div class="flex gap-x-6">
+                <div class="flex flex-row md:flex-col gap-x-12 gap-y-4">
+                    <img class="w-8 md:w-6 h-auto" src="./assets/eva_facebook-outline.jpg" alt="">
+                    <img class="w-8 md:w-6 h-auto" src="./assets/bx_bxl-instagram.jpg" alt="">
+                    <img class="w-8 md:w-6 h-auto" src="./assets/eva_twitter-outline.jpg" alt="">
+                    <img class="w-8 md:w-6 h-auto" src="./assets/feather_youtube.jpg" alt="">
+                </div>
+                <div class="hidden md:flex flex-col gap-y-4">
+                    <p>Tickitz Cinema id</p>
+                    <p>tickitz.id</p>
+                    <p>tickitz.id</p>
+                    <p>Tickitz Cinema id</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <p class="md:text-center font-sm text-gray-800 leading-8 tracking-wider px-5 py-10">&#169; 2020 Tickitz. All Rights Reserved</p>
+</body>
+</html>
+
